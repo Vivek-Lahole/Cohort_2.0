@@ -22,6 +22,18 @@ function dateMethods() {
 
   const newDate = new Date(2023, 8, 15); // Creating a new date
   console.log("New Date:", newDate);
+
+  setInterval(() => {
+    const date = new Date();
+    console.clear();
+    console.log(
+      (date.getHours() % 12) +
+        ":" +
+        (date.getMinutes() % 60) +
+        ":" +
+        (date.getSeconds() % 60)
+    );
+  }, 1000);
 }
 
 // Example Usage for Date Methods
